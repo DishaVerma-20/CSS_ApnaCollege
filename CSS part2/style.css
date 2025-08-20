@@ -1,0 +1,83 @@
+*{
+    font-family: Georgia;
+    background-color: wheat;
+}
+
+h1{
+    /* color: #f52936; */
+    color: #000000;
+}
+
+h3{
+    color: purple;
+}
+
+#Jee{
+    font-size: 5px;
+    color: darkblue;
+}
+#login{
+    background-color: white;
+}
+#signup{
+    background-color: #b92b27;
+    color: white;
+}
+
+.upvote{
+    background-color: green;
+    color: aliceblue;
+}
+
+/* descendant selector */
+p a{
+    color: purple;
+    background-color: yellow;
+}
+
+nav ul li a,li{
+    color: hotpink;
+}
+/* adjacent sibling combinator */
+p+h3{
+    text-decoration: underline;
+}
+
+.upvote+button{
+    background-color: cornflowerblue;
+    color: white;
+}
+
+/* child combinator */
+div>input{
+    background-color: cyan;
+}
+
+/* Attribute Selector */
+/* 
+input[type="text"]{
+    color: red;
+}
+
+input[type="Password"]{
+    color: green;
+} */
+
+input[type]{
+   background-color: antiquewhite;
+}
+
+
+/* teeno tareeke se same kaam he ho raha haii */
+
+/* #myid{
+    color: #b92b27;
+} */
+
+/* #myid p{
+    color: #b92b27;
+} */
+
+div[id="myid"]{
+    color: #b92b27;
+}
