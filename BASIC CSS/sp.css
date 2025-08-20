@@ -1,0 +1,13 @@
+h1{
+    font-weight: normal;
+    text-decoration: wavy crimson underline;
+}
+
+p{
+    font-weight: 900;
+    text-align: justify;
+    text-decoration: green dashed overline;
+}
+h3{
+    text-decoration: pink line-through;
+}
