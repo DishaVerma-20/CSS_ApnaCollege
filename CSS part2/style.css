@@ -1,7 +1,7 @@
-*{
+/* *{
     font-family: Georgia;
     background-color: wheat;
-}
+} */
 
 h1{
     /* color: #f52936; */
@@ -15,18 +15,6 @@ h3{
 #Jee{
     font-size: 5px;
     color: darkblue;
-}
-#login{
-    background-color: white;
-}
-#signup{
-    background-color: #b92b27;
-    color: white;
-}
-
-.upvote{
-    background-color: green;
-    color: aliceblue;
 }
 
 /* descendant selector */
@@ -62,10 +50,10 @@ input[type="text"]{
 input[type="Password"]{
     color: green;
 } */
-
+/* 
 input[type]{
    background-color: antiquewhite;
-}
+} */
 
 
 /* teeno tareeke se same kaam he ho raha haii */
@@ -80,4 +68,67 @@ input[type]{
 
 div[id="myid"]{
     color: #b92b27;
+}
+
+
+#login{
+    background-color: white;
+}
+#signup{
+    background-color: #b92b27;
+    color: white;
+}
+
+.upvote{
+    background-color: green;
+    color: aliceblue;
+}
+
+/* pseudo class : hover */
+
+
+#login:active{
+    background-color: crimson;
+}
+/* active is not working rn is vale case maiii*/
+button:active{
+    background-color: crimson;
+    color: #000000;
+}
+
+button:hover{
+    background-color: #000000;
+    color: white;
+}
+h3:hover{
+    text-decoration: none;
+}
+
+p:active{
+    font-weight: bold;
+}
+
+input[type="radio"]:checked + label{
+    color: red;
+    font-weight: bold;
+}
+
+div:nth-of-type(2n){
+    background-color: lightcoral;
+}
+
+h1::first-letter{
+    color: green;
+}
+p::first-line{
+    color: rgb(0, 105, 128);
+}
+p::selection{
+    background-color: lemonchiffon;
+}
+h3{
+    background-color: yellow;
+}
+h3{
+    background-color: crimson;
 }
