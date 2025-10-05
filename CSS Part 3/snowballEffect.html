@@ -5,12 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snowball Effect</title>
     <style>
-
+        section{
+            font-size: 15px;
+        }
+        div{
+            /* font-size: 1.5em; parent ke respect mai hrr baar change, aur esa chahiye  bhi nahi tha, s div ke font ka same size we wanted, root elemnt always html hota haii jiska size is 16px*/
+            font-size: 0.5rem;
+            
+        }
     </style>
 </head>
 <body>
-    <p>This shows snowball effect- drawback</p>
+    <p>This shows snowball effect- drawback of em (nested elements)
+        Then comes rem - Root em, ddepends on font size of the root elemnt, as suggested by the name.
+    </p>
     <section>
+        section
         <div>
             div 1
             <div>
