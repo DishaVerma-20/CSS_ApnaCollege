@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Properties</title>
+    <style>
+        section{
+            margin-top: 100px;
+        }
+        div{
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            background-color: bisque;
+            border: 2px solid black;
+            margin: 10px;
+        }
+        div:nth-of-type(2n){
+            background-color: brown;
+        }
+        div:nth-of-type(3n){
+            background-color: burlywood;
+        }
+        #one{
+            transform: rotate(45deg);
+            /* transform: rotate(-45deg); */
+            /* transform: rotate(180deg); */
+        }
+        #two{
+            transform: scale(1.1);
+            /* The transform: scale() property in CSS is used to resize (zoom in or zoom out) an element — increasing or decreasing its size without affecting the layout around it.
+            The space that the element originally occupied in the page layout remains the same. 
+            
+            
+            if ony one value means x and y are equal.
+            if two values, then x is width, horizontal scaling factor
+            y is vertical scaling factor that is height*/
+
+            transform: scaleX(8);
+            /* width increase ho jayga.. */
+
+            transform: scaleY(5);
+            transform: scale(8,5);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div id="one">1</div>
+        <div id="two">2</div>
+        <div id="three">3</div>
+        <div id="four">4</div>
+        <div id="five">5</div>
+    </section>
+</body>
+</html>
