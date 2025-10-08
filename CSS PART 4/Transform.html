@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transform Properties</title>
     <style>
+
         section{
             margin-top: 100px;
         }
@@ -14,7 +15,8 @@
             text-align: center;
             background-color: bisque;
             border: 2px solid black;
-            margin: 10px;
+            /* margin: 10px; */
+            margin: 10px auto;
         }
         div:nth-of-type(2n){
             background-color: brown;
@@ -41,11 +43,42 @@
             /* width increase ho jayga.. */
 
             transform: scaleY(5);
-            transform: scale(8,5);
+            transform: scale(8,5); 
+            /* last vala transform maana jayga */
+
+            transform: translate(50px, 50px);
+            /* transform mai translate vala apply hua kyuki vo last mai tha, isliye scale nahi hua 
+            translate help krta hai to move the particular elemnt on X and Y axis*/
+
+            transform: translateX(40px);
+            transform: translateY(40px);
+
+            transform: translateX(-100px); 
+            /* left ki trf move ho jayga */
+
+            /* skew */
+            /* skew matlab kheechna, jb 90 deg krege toh vo khichne ke baad ek point bnn jayga, toh we will not prefer 90 and -90 */
+        }
+
+        #four{
+            transform: skew(35deg);
+            /* skew kara toh uske andar ka elemnt bhi usi ke saath skew ho gaya haii */
+        }
+
+
+        #five{
+            transform: scale(100px), rotate(60deg), translateX(150px);
         }
     </style>
 </head>
 <body>
+    <p>
+The shorthand syntax margin: 0 auto; means:
+
+Top & Bottom margin: 0
+
+Left & Right margin: auto
+    </p>
     <section>
         <div id="one">1</div>
         <div id="two">2</div>
