@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Position Property</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            text-align: center;
+            border: 3px solid black;
+            margin: 20px;
+            display: inline-block;
+        }
+        #Relative{
+            background-color: yellow;
+            position: relative;
+            top: 100px;
+            left: 100px;
+            /* offset de diya, specific value, force left se lagega */
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h2>Relative Demo</h2>
+        <div></div>
+        <div id="Relative"></div>
+    </section>
+    <p>
+        Relative to itself position change hoti haiii, uske center se
+    </p>
+</body>
+</html>
