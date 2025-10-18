@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smiley Face</title>
+    <style>
+        /* #eyes{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: black;
+            position: relative;
+            top: 120px;
+            left: 150px;
+            z-index: 2; 
+        } */
+        #eye1{
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            background-color: black;
+            position: absolute;
+            top: 140px;
+            left: 150px;
+            z-index: 2;
+        }
+        #eye2{
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            background-color: black;
+            position: absolute;
+            top: 140px;
+            left: 320px;
+            z-index: 2;
+        }
+        #face{
+            background-color: yellow;
+            height: 500px;
+            width: 500px;
+            border: 4px solid black;
+            border-radius: 50%;
+        }
+        #mouth{
+            background-color: red;
+            border: 4px solid black;
+            border-bottom-left-radius: 60px;
+            border-bottom-right-radius: 60px;
+            height: 60px;
+            width: 280px;
+            position: absolute;
+            top: 350px;
+            left: 115px;
+        }
+    </style>
+</head>
+<body>
+    <div id="face">
+        <div id="eyes">
+            <div id="eye1"></div>
+            <div id="eye2"></div>
+        </div>
+        <div id="mouth"></div>
+    </div>
+
+    <!-- thoda classes aur id pr work krna seekho -->
+</body>
+</html>
