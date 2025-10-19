@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify Content</title>
+    <style>
+        .container{
+            display: flex; 
+            /* by default row mai set krta haiii */
+            flex-direction: column;
+            /* justify-content: flex-start; */
+            /* justify-content: flex-end; */
+            /* justify-content: center; */
+            /* top to bottom hai, toh top ki trf saare elemnts align ho gaye haiii */
+            height: 700px;
+            width: 500px;
+            background-color: azure;
+            border: 2px solid black;
+            /* justify-content: space-between; */
+            /* extra space along main axis items ke beech mai chali jaygi */
+
+            /* justify-content: space-around; */
+            /* middle and corner vali spaces aren't equal, if we want equal spaces tehn use space-evenly
+            middle vali space 2x hogi corner vali spaces se*/
+
+            justify-content: space-evenly;
+            /* middle and corner spaces are equal */
+        }
+        div{
+            height: 30px;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox Playground</h1>
+    <div class="container">
+        <div style="background-color: violet;">Violet</div>
+        <div style="background-color: indigo;">Indigo</div>
+        <div style="background-color: blue;">Blue</div>
+        <div style="background-color: green;">Green</div>
+        <div style="background-color: yellow;">Yellow</div>
+        <div style="background-color: orange;">Orange</div>
+        <div style="background-color: red;">Red</div>
+    </div>
+
+    <!-- flex restrict kar deta hai elememts ko, container ke andar saare items fit in hona chahiye..
+    height and width ignore ho jaygi elements ki in case of overflow. -->
+</body>
+</html>
