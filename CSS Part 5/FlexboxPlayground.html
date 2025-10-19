@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Playground</title>
+    <style>
+        .container{
+            display: flex; 
+            /* by default row mai set krta haiii */
+            flex-direction: column;
+            height: 200px;
+            width: 500px;
+            background-color: azure;
+            border: 2px solid black;
+        }
+        div{
+            height: 100px;
+            width: 500px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Flexbox Playground</h1>
+    <div class="container">
+        <div style="background-color: violet;">Violet</div>
+        <div style="background-color: indigo;">Indigo</div>
+        <div style="background-color: blue;">Blue</div>
+        <div style="background-color: green;">Green</div>
+        <div style="background-color: yellow;">Yellow</div>
+        <div style="background-color: orange;">Orange</div>
+        <div style="background-color: red;">Red</div>
+    </div>
+
+    <!-- flex restrict kar deta hai elememts ko, container ke andar saare items fit in hona chahiye..
+    height and width ignore ho jaygi elements ki in case of overflow. -->
+</body>
+</html>
