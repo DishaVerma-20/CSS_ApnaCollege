@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Content</title>
+    <style>
+        .container{
+            display: flex; 
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: 700px;
+            width: 900px;
+            background-color: azure;
+            border: 2px solid black;
+            /* align-content: flex-start; */
+            /* align-content: flex-end; */
+            /* align-content: center; */
+            /* column ke liye cross axis hoga, left to right */
+
+            align-content : baseline;
+            /* jo bhi hoga yaha pr cross-axis ke liye hoga */
+        }
+        div{
+            height: 50px;
+            width: 200px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Flexbox Playground</h1>
+    <div class="container">
+        <div style="background-color: violet;">Violet</div>
+        <div style="background-color: indigo;">Indigo</div>
+        <div style="background-color: blue; height: 20px;">Blue</div>
+        <div style="background-color: green;">Green</div>
+        <div style="background-color: yellow;">Yellow</div>
+        <div style="background-color: orange; height: 200px; font-size: 3.5em;">Orange</div>
+        <div style="background-color: red;">Red</div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <p>align-content: sets the space between and around for the cross-axis</p>
+</body>
+</html>
