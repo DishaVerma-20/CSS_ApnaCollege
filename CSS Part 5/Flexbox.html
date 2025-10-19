@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+</head>
+<style>
+    *{
+        background-color: peru;
+    }
+    .flex-container{
+        background-color: yellow;
+        height: 200px;
+        width: 500px;
+        border: 2px solid rgb(255, 255, 255);
+        display: flex;
+    }
+
+    .item{
+        background-color: crimson;
+        height: 100px;
+        width: 100px;
+        border:2px solid rgb(255, 255, 255);
+        border-radius: 20px;
+        margin: 20px;
+        padding: 20px;
+    }
+    /* jb bhi hum kisi ka display flex krte hai toh vo elemnt flex-container bnn jayga, aur uske bcche sabhi flex item. */
+</style>
+<body>
+    <div class="flex-container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+    <p>Flexbox:-
+        Flexible box layout
+        help karta hai web page ko responsive bnane ke liye
+        one-dimensional layout method for arranging items in rows or columns
+        agar hmne elements ko row mai arrange kara hai toh, main axis hmara horizontal axis hoga and cross axis hmara y-axis hoga
+        aur agar we have arranged the elemnts in the form of columns, then y-axis is ours main axis and x-axis would be the cross axis.
+    </p>
+</body>
+</html>
