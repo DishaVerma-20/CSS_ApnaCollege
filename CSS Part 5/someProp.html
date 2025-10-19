@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some Properties</title>
+    <style>
+        .container{
+            display: flex; 
+            /* by default row mai set krta haiii */
+            flex-direction: row;
+            justify-content: flex-start;
+            /* flex-wrap: wrap; */ 
+            /* wrap ho jayga content in two or more rows */
+            /* flex-wrap: nowrap; */
+            /* flex-wrap: wrap-reverse; */
+            /* cross axis ke along hoga, bottom to top */
+            /* stacking upward, not downward, row ke uppar row aaygi here */
+            font-size: 1.5em;
+            flex-wrap: nowrap;
+            /* align-items: center; */
+            /* cross sxis ke along changes, top se bottom hoti hai, bottom to top ho jayga */
+            height: 700px;
+            width: 900px;
+            background-color: azure;
+            border: 2px solid black;
+
+            align-items: baseline;
+            /* boxes iss trh se arrange hoge ki unke andar ka content sab ek he line mai dikhega */
+
+        }
+        div{
+            height: 100px;
+            width: 250px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Flexbox Playground</h1>
+    <div class="container">
+        <div style="background-color: violet;">Violet</div>
+        <div style="background-color: indigo;">Indigo</div>
+        <div style="background-color: blue; height: 75px;">Blue</div>
+        <div style="background-color: green;">Green</div>
+        <div style="background-color: yellow;">Yellow</div>
+        <div style="background-color: orange; height: 200px; font-size: 3.5em;">Orange</div>
+        <div style="background-color: red;">Red</div>
+    </div>
+
+    <!-- flex restrict kar deta hai elememts ko, container ke andar saare items fit in hona chahiye..
+    height and width ignore ho jaygi elements ki in case of overflow. -->
+</body>
+</html>
