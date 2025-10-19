@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-sizing</title>
+    <style>
+        .container{
+            display: flex; 
+            flex-direction: column;
+            height: 500px;
+            width: 500px;
+            background-color: azure;
+            border: 2px solid black;
+            align-content: flex-start;
+        }
+        div{
+            height: 100px;
+            width: 200px;
+        }
+        #orange{
+            align-self: flex-start;
+            /* flex-grow: 1; */
+            /* blue and orange adha adha kar lege  */
+            /* flex-basis: 300px; */
+            flex-shrink: 1;
+            /* by default flex-shrink sbka 1 he hota haii  */
+        }
+        #blue{
+            /* flex-basis: 400px; */
+            /* row hai toh main size width pr yeh property apply ho rahi haiii  */
+            /* flex-grow: 1; */
+            /* iska mtlb hai agar srf blue mai flex grow lgaya hai aur uski value 1 hai then yeh puri space occupy kr lega  */
+
+            /* agar hum flex grow value 2 kar dge toh orange se double space isko mil jaygi */
+            /* flex-grow: 2; */
+
+            /* we can set max and min width usse jyada ya km width pr nahi jayga  */
+            max-width: 200px;
+            flex-shrink: 2;
+
+            /* inspect krke toh dekho zara  */
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Flexbox Playground</h1>
+    <div class="container">
+        <div style="background-color: violet;">Violet</div>
+        <div style="background-color: indigo;">Indigo</div>
+        <div id="blue" style="background-color: blue;">Blue</div>
+        <div style="background-color: green;">Green</div>
+        <div style="background-color: yellow;">Yellow</div>
+        <div id= "orange" style="background-color: orange;">Orange</div>
+        <div style="background-color: red;">Red</div>
+    </div>
+    <p>
+      If row alignment haii, toh main size hmari width ho jaygi..
+      And if column alignment hai toh, main size hmara height ho jayga..
+      Flex sizing properties (like flex, flex-grow, flex-shrink, and flex-basis) are used for individual elements inside a flex container.
+
+      flex-grow: unit nahi hota hai iska
+    </p>
+</body>
+</html>
