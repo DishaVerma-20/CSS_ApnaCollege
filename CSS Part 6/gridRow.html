@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Row</title>
+    <style>
+        .container{
+            width: 600px;
+            height: 300px;
+            background-color: yellow;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-columns: repeat(3, 1fr);
+            row-gap: 10px;
+            column-gap: 10px;
+            grid-gap: 10px;
+        }
+        .item{
+            /* height: 50px;
+            width: 100px; */
+            border: 2px solid black;
+            background-color: greenyellow;
+            text-align: center;
+        }
+       
+        #two{
+            grid-row-start: 1;
+            grid-row-end: 3;
+
+
+            /* grid-row: 1/4;
+            grid-row: 1/ span 3;
+            shorthand rules haii for grid-row */
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <br>
+    <h1>Grid Item</h1>
+    <div class="container">
+        <div class="item" id="one">1</div>
+        <div class="item" id="two">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>
