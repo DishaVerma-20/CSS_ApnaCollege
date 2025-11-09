@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index</title>
+    <style>
+        .box{
+            height: 150px;
+            width: 150px;
+            border: 2px solid black;
+            background-color: pink;
+        }
+        .one{
+            background-color: aquamarine;
+            position: relative;
+            z-index: -2;
+        }
+        .two{
+            background-color: darksalmon;
+            position: relative;
+            bottom: 50px;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Z-Index</h1>
+    <div class="box one">1</div>
+    <div class="box two">2</div>
+    <div class="box three">3</div>
+
+    <br>
+    <br>
+    <br>
+
+    <p>It decides the stack level of elements.
+        by default sabka z-index zero ya auto hota haii..agar kbhi overlap hota toh jiski css properties badme design hai vo phle show hota haiii
+        position agar static ya default haii toh we can't set the z-index property
+        jitna z-index positive hoga, utna upper level pr aayga
+        jitna z-index negative hoga, vo utna niche jaata rahega
+    </p>
+</body>
+</html>

@@ -10,7 +10,7 @@
             color: black;
             border: 2px solid red;
         }
-        @media (width: 400px){
+        /* @media (width: 400px){
             h1{
                 background-color: red;
                 color: antiquewhite;
@@ -19,6 +19,37 @@
                 height: 100px;
                 width: 100px;
                 background-color: blue;
+            }
+        } */
+
+        /* @media (min-width:400px){
+            div{
+                background-color: greenyellow;
+                height: 100px;
+                width: 100px;
+            }
+        } */
+
+        @media (max-width: 400px){
+            div{background-color: aqua;
+            height: 100px;
+            width: 250px;
+        }
+        }
+
+        @media(min-width: 200px) and (max-width: 400px){
+            div{
+                background-color: red;
+            }
+        }
+
+        /* when range define krni ho toh above syntax  */
+
+
+        @media (orientation: landscape){
+            h1{
+                background-color: aqua;
+                color: brown;
             }
         }
 
