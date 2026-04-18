@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .container{
+            height: 100vh;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(12,1fr);
+            grid-template-rows: repeat(12,1fr);
+        }
+        .box{
+            background-color: pink;
+            font-size: 1.4rem;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+        /* Header */
+        .header{
+            grid-column: 1 / 13;  /* 1 se 13 ka matlab full width */
+            grid-row: 1 / 2;
+        }
+
+        /* Sidebar */
+        .sidebar{
+            grid-column: 1 / 4;
+            grid-row: 2 / 12;
+        }
+
+        /* Navigation */
+        .nav{
+            grid-column: 4 / 10;
+            grid-row: 2 / 4;
+        }
+
+        /* Ads */
+        .ads{
+            grid-column: 10 / 13;
+            grid-row: 2 / 10;
+        }
+
+        /* Main */
+        .main{
+            grid-column: 4 / 10;
+            grid-row: 4 / 12;
+        }
+
+        /* Footer */
+        .footer{
+            grid-column: 1 / 13;
+            grid-row: 12 / 13;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box header">Header</div>
+        <div class="box sidebar">Sidebar</div>
+        <div class="box nav">Navigation</div>
+        <div class="box ads">Ads</div>
+        <div class="box main">Main</div>
+        <div class="box footer">Footer</div>
+    </div>
+
+</body>
+</html>
